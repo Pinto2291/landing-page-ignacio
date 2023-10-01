@@ -1,0 +1,96 @@
+:root {
+    --font-helvetica: Helvetica;
+    --blue-indigo: #7158e2;
+    --font-white: #FFF;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::after, *a::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+/* UTITLITIES */
+
+body {
+    font-family: var(--font-helvetica);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--blue-indigo);
+    color: var(--font-white);
+    padding: 2.8rem;
+}
+
+.h2-title {
+    font-size: 2.5rem;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
+}
+
+.header-hero {
+    background-image: url(img/programador.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.footer {
+    background-color: var(--blue-indigo);
+    color: var(--font-white);
+    padding: 2.8rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 500px) {
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 1.5rem;
+    }
+
+    .header-nav-list {
+        display: flex;
+        gap: 2.5rem;
+        font-size: 1.8rem;
+    }
+}
