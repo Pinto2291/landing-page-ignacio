@@ -28,6 +28,97 @@
 
     </header>
 
+    <section class="main-section">
+        <h2 class="h2-title sub-title">Que es el codigo binario</h2>
+        <p class="main-section-text">El código binario es una codificación usada para la representación de textos, o procesadores de instrucciones de computadora, utilizando el sistema binario (sistema numérico de dos dígitos, o bit: el "0" y el "1"). En informática y telecomunicaciones, el código binario se utiliza en la codificación de datos, tales como cadenas de caracteres, o cadenas de bits Por ejemplo en el caso de un CD, las señales que reflejarán el "láser" que rebotará en el CD y será recepcionado por un sensor de distinta forma indicando así, si es un cero o un uno.</p>
+
+        <h3 class="h3-title">Transformacion de Decimal a Binario</h3>
+
+        <p class="main-section-text">Para hacer la conversión de decimal a binario, hay que ir dividiendo el número decimal entre dos y anotar en una columna a la derecha el resto (un 0 si el resultado de la división es par y un 1 si es impar).</p>
+
+        <div class="example-section">
+            <img src="img/Lógica-binaria.png" alt="transformacion de decimal a binario">
+            <p class="main-section-text"> Dividir entre 2 sucesivamente. <br>Apuntar el resultado y el resto de cada operación. <br> Apuntar a lista de ceros y unos de abajo a arriba</p>
+        </div>
+
+        <h3 class="h3-title">Transformacion de Binario a Decimal</h3>
+
+        <p class="main-section-text">Lo primero que tienes que hacer es asignar un valor a cada dígito del número binario, comenzando por el dígito que está más a la derecha y moviéndote hacia la izquierda. A cada número se le asigna la correspondiente potencia base 2 y, al final, se suman las potencias.
+
+            Por ejemplo, para convertir el número binario 10101100 a decimal, sería:
+            
+            Hay que numerar cada dígito de derecha a izquierda, comenzando desde cero:
+            1 0 1 0 1 1 0 0 7 6 5 4 3 2 1 0
+            Asignarle a cada dígito, su valor correspondiente en base 2, que es 2 elevado a una potencia, que corresponde a su posición en el número binario. Luego, multiplicar cada dígito del número binario por su valor correspondiente. </p>
+            <br>
+            <ul class="element-list">
+                <li>0 * 2^0 = 0</li>
+                <li>0 * 2^1 = 0</li>
+                <li>1 * 2^2 = 4</li>
+                <li>1 * 2^3 = 8</li>
+                <li>0 * 2^4 = 0</li>
+                <li>1 * 2^5 = 32</li>
+                <li>0 * 2^6 = 0</li>
+                <li>1 * 2^7 = 128</li>
+            </ul>
+            <br>
+            <p class="main-section-text">Ahora, tienes que sumar todos los resultados obtenidos:
+                0 + 0 + 4 + 8 + 0 + 32 + 0 + 128 = 172
+                <br>
+                Por tal, el número binario 10101100 es igual a 172 en decimal.</p>
+
+                <h3 class="h3-title">Operaciones con numeros Binarios</h3>
+
+                <p class="main-section-text">Las principales operaciones con numeros binarios son:</p>
+
+                <ul class="element-list">
+                    <li>Suma</li>
+                    <li>Resta</li>
+                    <li>Multiplicacion</li>
+                    <li>Division</li>
+                </ul>
+
+                <h3 class="h3-title">La Terminal</h3>
+
+                <div class="main-section-text">La <span class="font-bold">terminal o consola</span> es una forma generalizada de llamar a la interfaz de usuario de línea de comandos: una pantalla (generalmente, de color de fondo negro sobre letras blancas) donde escribiendo comandos (secuencias de palabras especiales) ordenamos al sistema realizar acciones concretas.
+
+                    <br>
+                    Estas interfaces de usuario fueron muy populares en la década de los 70 y 80, ya que los sistemas de la época carecían de interfaces gráficas y era el sistema habitual para comunicarse con un dispositivo. Con el tiempo, las interfaces gráficas de usuario ganaron popularidad y relegaron a las interfaces de línea de comandos a un segundo plano, aunque nunca terminaron de perder la popularidad que las caracterizaba, sobre todo entre los usuarios más técnicos.</div>
+
+                    <h3 class="h3-title">HTML
+                    </h3>
+
+                    <p class="main-section-text">HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. HTML se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado</p>
+
+                    <code class="code-example">
+
+                    </code>
+
+                    <h3 class="h3-title">CSS</h3>
+
+                    <p class="main-section-text">CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.​ Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML; el lenguaje puede ser aplicado a cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web y GUIs para muchas aplicaciones móviles (como Firefox OS)</p>
+
+                    <p class="main-section-text">Este es un ejemplo de codigo CSS:</p>
+
+                    <code class="code-example">
+                        .header-nav {
+                            <br>
+                            display: flex;
+                            <br>
+                            justify-content: space-around;
+                            <br>
+                            align-items: center;
+                            <br>
+                            background-color: var(--blue-indigo);
+                            color: var(--font-white);
+                            <br>
+                            padding: 2.8rem;
+                            <br>
+                        }
+                    </code>
+            
+    </section>
+
     <footer class="footer">
         <p>created by Ignacio Pinto</p>
     </footer>

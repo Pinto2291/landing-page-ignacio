@@ -19,6 +19,8 @@ html {
 body {
     font-family: var(--font-helvetica);
     margin: 0;
+    background-color: black;
+    color: var(--font-white);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +35,11 @@ li {
 ul {
     margin: 0;
     padding: 0;
+}
+
+img {
+    max-height: 100%;
+    width: auto;
 }
 
 .font-bold {
@@ -51,21 +58,95 @@ ul {
 }
 
 .h2-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    transition: all 250ms ease-in 100ms;
+    background-color: var(--blue-indigo);
+    border-radius: 1rem;
+    border: 0.25rem solid #FFF;
+    padding: 1rem;
 }
 
 .header-nav-list {
     display: flex;
-    gap: 2rem;
-    font-size: 1.8rem;
+    gap: 8rem;
+    font-size: 2.2rem;
+}
+
+.header-nav-list > li {
+    cursor: pointer;
+    transition: all 200ms ease-in 100ms;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.header-nav-list > li:hover {
+    background-color: #FFF;
+    color: var(--blue-indigo);
 }
 
 .header-hero {
-    background-image: url(img/programador.png);
+    background-image: url(img/programador\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
+    background-position: center center;
+    background-attachment: fixed;
 }
+
+.sub-title {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.main-section-text {
+    text-align: justify;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
+.h3-title {
+    font-size: 2.5rem;
+    color: var(--font-white);
+    padding: 1rem;
+    background-color: var(--blue-indigo);
+    border-radius: 1rem;
+    border: 0.25rem solid #FFF;
+    text-align: center;
+    margin: 2rem;
+}
+
+.example-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.element-list {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.code-example {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+/* FOOTER */
 
 .footer {
     background-color: var(--blue-indigo);
@@ -78,7 +159,7 @@ ul {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .header-nav {
         display: flex;
         flex-direction: column;
@@ -88,9 +169,19 @@ ul {
         padding: 1.5rem;
     }
 
+    .header-hero {
+        background-image: url(img/programador\ 2.png);
+        height: 400px;
+    }
+
     .header-nav-list {
         display: flex;
         gap: 2.5rem;
         font-size: 1.8rem;
+    }
+
+    .main-section-text {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
     }
 }
